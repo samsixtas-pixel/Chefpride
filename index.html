@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chef's Pride Restaurant — Premium East African dining on Chagga Street, Dar es Salaam. BBQ, Shawarma, Italian, Seafood & more.">
+  <meta name="theme-color" content="#0D0902">
+  <title>Chef's Pride Restaurant | Chagga Street, Dar es Salaam</title>
+
+  <!-- Preconnect fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- Preload hero image for LCP -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&q=80&fit=crop&auto=format">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAVBAR WITH MEGA MENUS
+══════════════════════════════════════════ -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+
+  <a href="#home" class="nav-logo">
+    <span class="brand">Chef's Pride</span>
+    <span class="tagline">Dar es Salaam · Since 2018</span>
+  </a>
+
+  <ul class="nav-links">
+
+    <!-- Featured -->
+    <li class="nav-item">
+      <a href="#featured" class="nav-link">
+        Featured
+        <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+      <div class="mega" id="megaFeatured">
+        <!-- Built by JS -->
+      </div>
+    </li>
+
+    <!-- Menu -->
+    <li class="nav-item">
+      <a href="#menu" class="nav-link">
+        Menu
+        <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+      <div class="mega wide" id="megaMenu">
+        <!-- Built by JS -->
+      </div>
+    </li>
+
+    <!-- Cuisines -->
+    <li class="nav-item">
+      <a href="#cuisines" class="nav-link">
+        Cuisines
+        <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+      <div class="mega wide" id="megaCuisines">
+        <!-- Built by JS -->
+      </div>
+    </li>
+
+    <!-- About -->
+    <li class="nav-item">
+      <a href="#about" class="nav-link">
+        About
+        <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+      <div class="mega" style="min-width:320px;">
+        <div class="mega-head"><span class="mega-head-title">🏆 Chef's Pride Story</span></div>
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80&fit=crop" alt="Kitchen" loading="lazy" style="width:100%;height:120px;object-fit:cover;border-radius:12px;margin-bottom:0.9rem;">
+        <div style="font-size:0.82rem;color:rgba(255,248,240,0.6);line-height:1.65;margin-bottom:0.9rem;">
+          Born on Chagga Street in 2018, Chef's Pride serves 80+ dishes from around the world — made fresh daily with locally-sourced ingredients.
+        </div>
+        <div class="mega-info">
+          <span class="ic">🔥</span>
+          <div class="mega-info-txt"><label>Specialty</label><span>Live Fire BBQ & East African Fusion</span></div>
+        </div>
+        <div class="mega-info">
+          <span class="ic">🕐</span>
+          <div class="mega-info-txt"><label>Hours</label><span>Mon–Sun · 10:00 AM – 11:00 PM</span></div>
+        </div>
+        <div style="margin-top:0.9rem;">
+          <a href="#about" class="mega-feat-btn">Our Full Story →</a>
+        </div>
+      </div>
+    </li>
+
+    <!-- Contact -->
+    <li class="nav-item">
+      <a href="#contact" class="nav-link">
+        Contact
+        <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+      <div class="mega" style="min-width:300px;">
+        <div class="mega-head"><span class="mega-head-title">📍 Find Us</span></div>
+        <div class="mega-info">
+          <span class="ic">📍</span>
+          <div class="mega-info-txt"><label>Address</label><span>Chagga Street, Dar es Salaam, Tanzania</span></div>
+        </div>
+        <div class="mega-info">
+          <span class="ic">📱</span>
+          <div class="mega-info-txt"><label>Phone / WhatsApp</label><span>+255 698 741 459</span></div>
+        </div>
+        <div class="mega-info">
+          <span class="ic">✉️</span>
+          <div class="mega-info-txt"><label>Email</label><span>orders@chefspride.co.tz</span></div>
+        </div>
+        <div class="mega-info">
+          <span class="ic">🕐</span>
+          <div class="mega-info-txt"><label>Open Every Day</label><span>10:00 AM – 11:00 PM</span></div>
+        </div>
+        <div style="margin-top:1rem;">
+          <a href="https://wa.me/255698741459" class="mega-feat-btn" target="_blank" rel="noopener" style="background:#25D366;">
+            💬 Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+
+  <div class="nav-actions">
+    <button class="cart-trigger" aria-label="Open cart">
+      🛒 Cart <span class="cart-badge">0</span>
+    </button>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" role="dialog" aria-modal="true">
+  <a href="#featured">Featured</a>
+  <a href="#menu">Menu</a>
+  <a href="#cuisines">Cuisines</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-bg" role="img" aria-label="Grilled food background"></div>
+  <div class="hero-radial"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Chagga Street · Dar es Salaam · Tanzania</div>
+
+    <h1 class="hero-title">
+      <span class="t1">Where Fire</span>
+      <span class="t2">Meets Flavor</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      East Africa's most celebrated culinary experience. BBQ, Shawarma, Seafood, Italian &amp; beyond — crafted with pride, served with soul.
+    </p>
+
+    <div class="hero-ctas">
+      <button class="btn-primary" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">
+        🍽️ Explore Menu
+      </button>
+      <a href="https://wa.me/255698741459" class="btn-ghost" target="_blank" rel="noopener">
+        📲 Order via WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-stats" aria-label="Stats">
+    <div class="stat"><div class="stat-num">15K+</div><div class="stat-label">Happy Diners</div></div>
+    <div class="stat"><div class="stat-num">80+</div><div class="stat-label">Menu Items</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">Years Strong</div></div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 5v14M5 12l7 7 7-7"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FEATURED CAROUSEL
+══════════════════════════════════════════ -->
+<section class="featured" id="featured">
+  <div class="section-header reveal">
+    <span class="section-label">🌟 Today's Highlights</span>
+    <h2 class="section-title">Featured <em>Meals</em></h2>
+  </div>
+  <div class="carousel-wrap">
+    <div class="carousel-track" id="carouselTrack"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CUISINE BENTO
+══════════════════════════════════════════ -->
+<section class="bento-section" id="cuisines">
+  <div class="section-header reveal">
+    <span class="section-label">🌍 World on a Plate</span>
+    <h2 class="section-title">Every Cuisine, <em>Mastered</em></h2>
+  </div>
+  <div class="bento-grid" id="bentoGrid"></div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FULL MENU
+══════════════════════════════════════════ -->
+<section class="menu-section" id="menu">
+  <div class="section-header reveal">
+    <span class="section-label">📋 Full Menu</span>
+    <h2 class="section-title">Order What You <em>Crave</em></h2>
+  </div>
+  <nav class="menu-cat-nav" id="menuCatNav" aria-label="Menu categories"></nav>
+  <div class="menu-grid" id="menuGrid" role="list" aria-live="polite"></div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════ -->
+<section class="about-section" id="about">
+  <div>
+    <span class="section-label reveal">🏆 Our Story</span>
+    <h2 class="story-title reveal d1">
+      Born from the Heart of <em>East Africa</em>
+    </h2>
+    <p class="story-body reveal d2">
+      Chef's Pride started as a dream on Chagga Street — a small grill, a fire that never died, and a vision to serve Dar es Salaam something extraordinary. Today we serve 80+ dishes spanning continents, all prepared with locally-sourced ingredients and international technique.
+    </p>
+    <div class="highlights">
+      <div class="hl reveal d1"><div class="hl-icon">🔥</div><div class="hl-title">Live Fire BBQ</div><div class="hl-desc">Every BBQ dish cooked over real charcoal — no shortcuts, ever</div></div>
+      <div class="hl reveal d2"><div class="hl-icon">🌿</div><div class="hl-title">Fresh Ingredients</div><div class="hl-desc">Sourced daily from local Dar es Salaam markets</div></div>
+      <div class="hl reveal d3"><div class="hl-icon">👨‍🍳</div><div class="hl-title">Master Chefs</div><div class="hl-desc">Trained in 4 international cuisines with 10+ years experience</div></div>
+      <div class="hl reveal d4"><div class="hl-icon">🚀</div><div class="hl-title">Fast Delivery</div><div class="hl-desc">WhatsApp orders delivered hot within 45 minutes</div></div>
+    </div>
+    <a href="https://wa.me/255698741459" class="btn-primary reveal" target="_blank" rel="noopener" style="text-decoration:none;">
+      📲 Reserve a Table
+    </a>
+  </div>
+
+  <div class="story-imgs reveal-r">
+    <img class="si-main" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80&fit=crop" alt="Chef's Pride kitchen" loading="lazy">
+    <img class="si-accent" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80&fit=crop" alt="Dining experience" loading="lazy">
+    <div class="si-badge"><span>7</span><small>Years of Pride</small></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     REVIEWS
+══════════════════════════════════════════ -->
+<section class="testimonials" id="reviews">
+  <div class="section-header reveal">
+    <span class="section-label">💬 Customer Love</span>
+    <h2 class="section-title">What Dar es Salaam <em>Says</em></h2>
+  </div>
+  <div class="reviews-grid" id="reviewsGrid"></div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     WHATSAPP CTA
+══════════════════════════════════════════ -->
+<section class="wa-cta">
+  <div class="wa-cta-inner">
+    <div class="reveal"><span class="section-label">📲 Skip the Queue</span></div>
+    <h2 class="cta-title reveal">Order in <em>Seconds</em><br>via WhatsApp</h2>
+    <p class="cta-sub reveal">Build your order right here → tap checkout → we receive it instantly.<br>Open every day 10:00 AM – 11:00 PM.</p>
+    <div class="reveal">
+      <a href="https://wa.me/255698741459" class="btn-wa" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Order Now on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer class="footer" id="contact">
+  <div class="footer-grid">
+    <div>
+      <div class="f-brand-name">Chef's Pride</div>
+      <p class="f-brand-desc">East Africa's premier culinary destination. Born on Chagga Street, beloved across Dar es Salaam. Every dish tells a story of fire, culture &amp; passion.</p>
+      <div class="socials">
+        <a href="#" class="social-btn" aria-label="Facebook">📘</a>
+        <a href="#" class="social-btn" aria-label="Instagram">📸</a>
+        <a href="#" class="social-btn" aria-label="TikTok">🎵</a>
+        <a href="https://wa.me/255698741459" class="social-btn" aria-label="WhatsApp" target="_blank" rel="noopener">💬</a>
+      </div>
+    </div>
+    <div class="f-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#menu">Full Menu</a></li>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="#menu">🌯 Shawarma Joint</a></li>
+        <li><a href="#menu">🔥 BBQ</a></li>
+        <li><a href="#menu">🍝 Italian</a></li>
+        <li><a href="#menu">🍛 Chinese &amp; Indian</a></li>
+        <li><a href="#menu">🦞 Seafood</a></li>
+        <li><a href="#menu">🥗 Salads &amp; Snacks</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h4>Visit Us</h4>
+      <div class="f-contact"><span class="ic">📍</span><span>Chagga Street, Dar es Salaam, Tanzania</span></div>
+      <div class="f-contact"><span class="ic">🕐</span><span>Mon–Sun: 10:00 AM – 11:00 PM</span></div>
+      <div class="f-contact"><span class="ic">📱</span><span><a href="https://wa.me/255698741459" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">+255 698 741 459</a></span></div>
+      <div class="f-contact"><span class="ic">✉️</span><span>orders@chefspride.co.tz</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Chef's Pride Restaurant. All rights reserved.</span>
+    <span>Made with 🔥 in Dar es Salaam, Tanzania</span>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════
+     CART PANEL
+══════════════════════════════════════════ -->
+<div class="cart-overlay"></div>
+<aside class="cart-panel" aria-label="Shopping cart">
+  <div class="cart-hd">
+    <h2>🛒 Your Order</h2>
+    <button class="cart-close-btn" aria-label="Close cart">✕</button>
+  </div>
+  <div class="cart-body" id="cartBody">
+    <div class="cart-empty-state">
+      <div class="ei">🛒</div>
+      <p>Your cart is empty.<br>Explore our menu and add your favourites!</p>
+    </div>
+  </div>
+  <div class="cart-ft">
+    <div class="cart-total-row">
+      <span class="ctl">Total</span>
+      <span class="cta-amount" id="cartAmount">TZS 0/-</span>
+    </div>
+    <button class="btn-checkout" id="checkoutBtn">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Checkout via WhatsApp
+    </button>
+  </div>
+</aside>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>
